@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sounny's codePlayground</title>
+  <title>Sounny's codePlayground - Arrays and Loops</title>
   <style>
     /* General Styles */
     body {
@@ -110,32 +110,38 @@
   
   <!-- Lesson Section -->
   <div class="lesson">
-    <h3>Lesson: Using <code>console.log()</code> and Strings in JavaScript</h3>
+    <h3>Lesson: Arrays and Loops in JavaScript</h3>
     <p>
-      In JavaScript, the <code>console.log()</code> function is used to print messages to the console.
-      This is helpful when you want to display information or debug your code.
+      In JavaScript, an array is a special variable that can hold multiple values. You can create an array by listing the values inside square brackets <code>[]</code>.
     </p>
     <p>
-      A string is a type of data that represents text. You create a string by wrapping text in quotes:
-      <code>"Hello World!"</code>.
+      For example:
+    </p>
+    <pre><code>let fruits = ["apple", "banana", "orange"];</code></pre>
+    <p>
+      This array contains three fruits: "apple", "banana", and "orange". Each item in the array has an index, starting at 0.
     </p>
     <p>
-      You can use <code>console.log()</code> to print a string to the console, like this:
+      You can loop through an array to access each item using a <code>for</code> loop. For example:
     </p>
-    <pre><code>console.log("Hello World!");</code></pre>
+    <pre><code>for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}</code></pre>
     <p>
-      This will print "Hello World!" to the console.
+      This code will print each fruit in the array to the console.
     </p>
     <p>
-      Now, try it yourself in the editor below. Write the code to print <strong>"Hello World!"</strong> to the console!
+      Now, try it yourself. Create an array and use a loop to print each item in the array to the console.
     </p>
   </div>
 
   <!-- Challenge Section -->
   <div>
-    <h3>Challenge: Print "Hello World!"</h3>
+    <h3>Challenge: Create an Array and Use a Loop</h3>
     
-    <textarea id="editor">// Write your code here</textarea>
+    <textarea id="editor">
+// Create an array of animals
+// Use a loop to print each animals</textarea>
     <br>
     <button onclick="runCode()">Run Code</button>
     <h3>Console Output:</h3>

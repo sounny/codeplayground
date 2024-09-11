@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sounny's codePlayground</title>
+  <title>Sounny's codePlayground - Variables and Math</title>
   <style>
     /* General Styles */
     body {
@@ -110,32 +110,37 @@
   
   <!-- Lesson Section -->
   <div class="lesson">
-    <h3>Lesson: Using <code>console.log()</code> and Strings in JavaScript</h3>
+    <h3>Lesson: Variables and Basic Math in JavaScript</h3>
     <p>
-      In JavaScript, the <code>console.log()</code> function is used to print messages to the console.
-      This is helpful when you want to display information or debug your code.
+      In JavaScript, variables are used to store data values. You can declare a variable using the <code>let</code> or <code>const</code> keyword.
     </p>
     <p>
-      A string is a type of data that represents text. You create a string by wrapping text in quotes:
-      <code>"Hello World!"</code>.
+      For example:
+    </p>
+    <pre><code>let number = 5;</code></pre>
+    <p>
+      This stores the number <code>5</code> in a variable called <code>number</code>.
     </p>
     <p>
-      You can use <code>console.log()</code> to print a string to the console, like this:
+      You can also perform math operations like addition, subtraction, multiplication, and division using these variables. For example:
     </p>
-    <pre><code>console.log("Hello World!");</code></pre>
+    <pre><code>let result = number + 10;</code></pre>
     <p>
-      This will print "Hello World!" to the console.
+      This code adds <code>10</code> to the value stored in <code>number</code> and stores the result in the variable <code>result</code>.
     </p>
     <p>
-      Now, try it yourself in the editor below. Write the code to print <strong>"Hello World!"</strong> to the console!
+      Now, try it yourself. Declare a variable, perform a math operation, and print the result using <code>console.log()</code>.
     </p>
   </div>
 
   <!-- Challenge Section -->
   <div>
-    <h3>Challenge: Print "Hello World!"</h3>
+    <h3>Challenge: Do Some Math with Variables</h3>
     
-    <textarea id="editor">// Write your code here</textarea>
+    <textarea id="editor">
+// Declare a variable and store a number
+// Do some math with the variables
+// Print the result to the console</textarea>
     <br>
     <button onclick="runCode()">Run Code</button>
     <h3>Console Output:</h3>

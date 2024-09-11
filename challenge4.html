@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sounny's codePlayground</title>
+  <title>Sounny's codePlayground - User Input</title>
   <style>
     /* General Styles */
     body {
@@ -110,32 +110,32 @@
   
   <!-- Lesson Section -->
   <div class="lesson">
-    <h3>Lesson: Using <code>console.log()</code> and Strings in JavaScript</h3>
+    <h3>Lesson: Getting User Input with <code>prompt()</code></h3>
     <p>
-      In JavaScript, the <code>console.log()</code> function is used to print messages to the console.
-      This is helpful when you want to display information or debug your code.
+      In JavaScript, you can ask the user to enter information by using the <code>prompt()</code> function. 
+      The function displays a dialog box where the user can type input.
     </p>
     <p>
-      A string is a type of data that represents text. You create a string by wrapping text in quotes:
-      <code>"Hello World!"</code>.
+      For example:
+    </p>
+    <pre><code>let name = prompt("What is your name?");</code></pre>
+    <p>
+      This will show a dialog box asking "What is your name?". The user can type a name, and that value will be stored in the variable <code>name</code>.
     </p>
     <p>
-      You can use <code>console.log()</code> to print a string to the console, like this:
+      You can then use this input in your code. For example:
     </p>
-    <pre><code>console.log("Hello World!");</code></pre>
+    <pre><code>console.log("Hello, " + name + "!");</code></pre>
     <p>
-      This will print "Hello World!" to the console.
-    </p>
-    <p>
-      Now, try it yourself in the editor below. Write the code to print <strong>"Hello World!"</strong> to the console!
+      This code will print a personalized message with the user's input. Now, try asking the user for input and printing it to the console!
     </p>
   </div>
 
   <!-- Challenge Section -->
   <div>
-    <h3>Challenge: Print "Hello World!"</h3>
+    <h3>Challenge: Ask for User Input</h3>
     
-    <textarea id="editor">// Write your code here</textarea>
+    <textarea id="editor">// Ask the user for their name\nlet userName = prompt("What is your name?");\n\n// Print a greeting to the console\nconsole.log("Hello, " + userName + "!");</textarea>
     <br>
     <button onclick="runCode()">Run Code</button>
     <h3>Console Output:</h3>
